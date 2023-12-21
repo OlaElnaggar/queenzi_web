@@ -1,0 +1,421 @@
+*  {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    color: #0d3b55;
+    
+    }
+    .hero{
+    background-color:rgba(0, 174, 255, 0.086);
+    margin-bottom: 15rem;
+    }
+    nav{
+    padding-top: 4ch;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+    nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    }
+    .logo a {
+        padding-right: 0.5rem;
+    }
+    .logo a img{
+        border-radius: 50%;
+        border: 1.5px solid rgb(242, 198, 86);
+    }
+    nav .nav_items { 
+     display: flex;
+     list-style: none;
+     
+    }
+    .nav_items .nav_item {  
+    
+     padding-right: 3rem;
+    }
+     .nav_item .nav_link {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    }
+    a:hover{
+        color:rgb(247, 208, 110);
+    }
+    .drop_down{
+        background-color:white;
+        width: 280px;
+        height: 290px;
+        padding-left: 1.3rem;
+        z-index: 5;
+        color: #0d3b55;
+        padding-top: 1rem;
+        position:absolute;
+        top: 5.4rem;
+        left: 57rem;
+        visibility: hidden;
+        
+    }
+    .form_label{
+       padding-left: 2px;
+       font-size: large;
+       font-weight: 500;
+    }
+    .form_input{
+        height: 2.5rem;
+        width: 90%;
+        margin-bottom: 0.6rem;
+        border-radius:0.5rem;
+        border: 0.5px solid #0d3b55;
+        padding-left: 1rem;
+        margin-top: 0.2rem;
+    }
+    .form_input:focus {
+        border-color: rgb(247, 208, 110);
+        box-shadow: 0 0 0 1px rgb(247, 208, 110);
+        outline: none;
+      }
+    .form_btn{
+        width: 90%;
+        height: 2rem;
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        background-color:rgb(242, 198, 86);
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: large;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-top: 0.7rem;
+        
+    }
+    .form_btn:hover{
+        background-color:rgb(247, 208, 110);
+        cursor: pointer;
+    }
+    .hero_section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1366px;
+        margin: 5rem auto;
+    
+    }
+    .div_content_hero{
+        width: 50%;
+        padding-left: 15%;
+        padding-bottom: 4rem;
+    }
+    .div_img_hero{ 
+        width: 50%;
+    }
+    .hero_section .head_content_hero1{
+        text-transform: uppercase;
+        font-family:'Playfair Display', serif;
+        margin-bottom: 0.5rem;
+        font-size: 80px;
+    }
+    .hero_section p{
+     font-size: 20px;
+    }
+    .yllow{
+        font-family: 'Ephesis', cursive;
+        font-weight: 900;
+        font-size: 38px;
+        color: rgb(242, 198, 86);
+    
+    }
+    .btn{
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem ;
+        outline: none;
+        border: none;
+        padding: 0.75rem 2rem;
+        background-color:rgb(242, 198, 86);
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.04rem;
+    }
+    .btn:hover{
+        background-color:rgb(247, 208, 110);
+        cursor: pointer;
+    }
+    #up{
+        visibility: visible; 
+        position:fixed;
+        bottom:10px;
+        right: 10px;
+        background-color:rgb(242, 198, 86); 
+        cursor: pointer;
+        transition: 0.2s;
+        width: 3rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 5000;
+    }
+    .up.show{
+         visibility: hidden; 
+    }
+    div.shop{
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(0, 174, 255, 0.086);
+        padding: 6rem 0;
+        margin-bottom: 10rem;
+    } 
+    
+    div.title_shop{
+        width: 90%;
+        padding: 5px;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .title_shop p{
+        font-family:'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    div.slider{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    div.slide{
+        border-radius: 1rem;
+        margin: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 1s;
+        box-shadow:0 0 20px 2px rgb(242, 198, 86);
+    }
+    div.slide .btn{
+        visibility: hidden;
+    }
+    div.slide:hover{
+        background-color:white;
+        cursor: pointer;
+        .btn {
+            visibility:visible;
+        };
+        z-index: 2;
+        transform: scale(1.1);
+    }
+    div.slide img{
+    width: 60%;
+    }
+    div.slide a{
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0.5rem;
+        font-size: large;
+    }
+    div.slide p{
+        padding-bottom: 0.5rem;
+        padding-left: 3rem;
+        color: rgb(255, 2, 2);
+    }
+    
+    div.products{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+        
+    }
+    div.product{
+        border-radius: 1rem;
+        margin: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 1s;
+        box-shadow:0 0 20px 2px rgb(242, 198, 86);
+    }
+    
+    div.product .btn{
+        visibility: hidden;
+    }
+    div.product:hover{
+        background-color:white;
+        cursor: pointer;
+        .btn {
+            visibility:visible;
+        };
+        z-index: 2;
+        transform: scale(1.1);
+    }
+    div.product img{
+    width: 60%;
+    }
+    div.product a{
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0.5rem;
+        font-size: large;
+    }
+    div.product p{
+        padding-bottom: 0.5rem;
+        padding-left: 3rem;
+        color: rgb(255, 2, 2);
+    }
+    div.sp{
+        margin-bottom: 15rem;
+    }
+    .sp .title{
+        width: 90%;
+        padding: 5px;
+        margin: 3px auto;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 4rem;
+    }
+    .sp .title p{
+        size: 200px;
+        font-family:'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    
+    div#subscribe{
+        display: flex;
+        justify-content: space-between;
+        background-color:rgba(0, 174, 255, 0.086); 
+       padding-left: 3rem;
+       padding-right: 1.5rem;
+       padding-top: 3rem;
+       padding-bottom: 3rem;
+    }
+    div#subscribe .content p{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+    }
+    div.input input{
+        margin-top: 2rem;
+        width:40rem;
+        height: 4rem;
+        border-color:rgb(242, 198, 86); 
+        border-radius: 0.7rem;
+        font-size: 16px;
+        padding-left: 2rem;
+    }
+    div.about{
+        padding: 8rem 5rem;
+        background-color:#0d3b55;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    div.info{
+        display: flex;
+        justify-content: space-between;
+    }
+    div.shop_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    div.shop_link  p{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(242, 198, 86);
+        
+    
+    }
+    .shop_link a{
+        text-decoration: none;
+        color: grey;
+    }
+    div.info_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 6rem;
+        padding-top: 0.5rem;
+    }
+    div.info_link  p{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(242, 198, 86);
+        
+    
+    }
+    .info_link a{
+        text-decoration: none;
+        color: grey;
+        text-transform: capitalize;
+    }
+    .info a:hover{
+    color: white;
+    cursor: pointer;
+    }
+    div.queenzi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4rem;
+    
+    }
+    .queenzi p {
+        color:grey;
+    }
+    .queenzi h1{
+        color: white;
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .queenzi .main{
+        color:white;
+        
+    }
+    .queenzi .num{
+        color: red;
+        font-weight: bolder;
+        font-size: x-large;
+        margin-top: 0.4rem;
+        padding-left: 2.3rem;
+    }
+    div.find{
+    margin: 1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    }
+    div.find p{
+    color: grey;
+    
+    }
+    div.find p.hd{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(242, 198, 86);
+        margin-bottom: 1.5rem;
+    }
+    span.l1{
+        color: white;
+    }
+    #icons{
+        margin-top: 0.6rem;
+        font-size: 35px;
+    }

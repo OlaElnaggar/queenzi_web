@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="We have the best honey" />
+
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;
+500&family=Dancing+Script:wght@500;600;700&family=Ephesis&family=Montserrat:ital,
+wght@1,200&family=Playfair+Display:ital,wght@0,400;1,400;1,700&family=Roboto:wght@300&display=swap"
+ rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="icon" href="logo.jpg">
+
+    <title> queenzi </title>
+
+</head>
+<body>
+    <div class="hero" id="hero">
+        <nav class="navbar">
+            <div class="logo">
+                
+                <a href="#">
+                    <img src="logo.jpg" width="70" />
+                </a>
+                <h3>queenzi</h3>
+            </div>
+            <ul class="nav_items">
+                <li class="nav_item"><a class="nav_link" href="#">home</a></li>
+                <li class="nav_item"><a class="nav_link" href="#best">best</a></li>
+                <li class="nav_item"><a class="nav_link" href="#shop">shop</a></li>
+                <li class="nav_item"><a class="nav_link" href="#">blog</a></li>
+                <li class="nav_item"><a class="nav_link" href="#">contact</a></li>
+            </ul>
+            <div class="icon">
+                <i class='bx bx-search' undefined  style="margin-right: 1rem; font-size:x-large; cursor: pointer;"></i>
+                <i class='bx bx-user'style="margin-right: 1rem; font-size:x-large; cursor: pointer;" id="user" ></i>
+                <i class='bx bx-basket'style="margin-right: 1rem; font-size:x-large; cursor: pointer;"  ></i>
+            </div>
+            <div class="drop_down" id="contact">
+                <p style="font-size: larger;  font-weight: bold; margin-bottom: 1rem; padding-left:5.3rem;"> Sign in </p>
+
+              <form action="index.php" method="post">
+                <label for="username" class="form_label">username</label><br>
+                <input type="text" id="username" name="username" placeholder="Username"  required class="form_input"><br>
+                <label for="password" class="form_label">password</label><br>
+                <input type="password" id="password" name="password" placeholder="Password" required class="form_input"><br>
+                 <input type="submit" name="login" value="login" class="form_btn">
+              </form>
+            </div>
+        
+            <script>
+                const icon = document.getElementById("user");
+                const dropDown = document.getElementById("contact");
+              
+                icon.onclick = function() {
+                  dropDown.style.visibility = "visible";
+                };
+              
+                document.addEventListener("click", function(event) {
+                  const target = event.target;
+                  const isDropDown = target.matches("#user") || target.closest("#contact");
+              
+                  if (!isDropDown) {
+                    dropDown.style.visibility = "hidden";
+                  }
+                });
+              </script>
+
+        </nav>
+      <div class="hero_section">
+        <div class="div_content_hero" >
+            <h3 class="yllow">unique tastes</h3>
+            <h1 class="head_content_hero1">pure & <br> natural</h1>
+            <p class="paragraph_content">Discover the wrold's best honey </p>
+            <a href="#shop"> <button class="btn"> shop honey</button></a>
+        </div>
+
+        <div class="div_img_hero" >
+            <img src="heroimg.png" width="60%"  >
+        </div>
+      </div>
+    </div>
+    <div id="up" class="up">
+        <i class='bx bx-chevron-up' style='color:#ffffff; font-size: x-large;'  ></i>
+       
+    </div>
+
+    <script>
+        let span = document.getElementById("up");
+      
+        window.addEventListener("scroll", function() {
+          if (window.scrollY >= 1000) {
+            span.classList.add("show");
+          } else {
+            span.classList.remove("show");
+          }
+        });
+      
+        span.onclick = function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        };
+      </script>
+   
+    <div class="shop" id="best">
+        <div class="title_shop" >
+           <p> <span class="yllow"> shop our</span>  <br> best sellers </p>
+        </div>
+
+      <div class="slider" >
+        <div class="slide">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="slide">
+            <img src="R (1).png" alt="this is a product photo" > <br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="slide">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="slide">
+            <img src="R (1).png" alt="this is a product photo"><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+       </div> 
+       <div class="slider-indicators"></div>
+    </div>
+
+    <div class="sp" id="shop">
+        <div class="title">
+            <p>shop</p>
+        </div>
+    <div class="products" >
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo" > <br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo"><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+     </div> 
+
+     <div class="products" >
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo" > <br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo"><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+     </div> 
+
+     <div class="products" >
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo" > <br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn">add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="Orange.png" alt="this is a product photo" ><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn">add to bag</button>
+        </div>
+
+        <div class="product">
+            <img src="R (1).png" alt="this is a product photo"><br>
+            <a href="#">synergistic iron plate </a>
+            <p>$360.00</p>
+            <button class="btn"> add to bag</button>
+        </div>
+
+     </div> 
+
+    </div>
+    
+    <div id="subscribe">
+        <div class="content">
+          <span class="yllow">Get the buzz</span>
+          <p>Recipes, product releases, promotions,<br> latest news and updates</p>
+        </div>
+        <div class="input"> 
+            <form action="" method="post">
+          <input id="emailInput" type="email" placeholder="Enter your email..." required>
+        
+          <button class="btn" onclick="subscribe()">Subscribe</button>
+        </form>
+        </div>
+      </div>
+   
+    <script>
+    function subscribe() {
+        const emailInput = document.getElementById('emailInput');
+        const email = emailInput.value;
+      
+        if (email === '') {
+          alert('Please enter your email.');
+        } else {
+          alert('Your email is saved successfully.');
+        }
+        emailInput.value = " ";
+      }
+    </script>
+
+    <div class="about">
+        <div class="info">
+            <div class="shop_link">
+                <p>shop</p>
+                <a href="#shop">Honeys</a> 
+                <a href="#shop">Health & Nutrition</a>
+                <a href="#shop">Candles & Wax</a>
+               
+            </div>
+
+            <div class="info_link">
+                <p>info</p>
+                <a href="#hero">home</a>
+                <a>about</a>
+                <a href="#best">best seller</a>
+                <a href="#best">offers</a>
+            </div>
+        </div>
+
+        <div class="queenzi">
+            <h1 > queenzi</h1>
+            <p class="main">Are you a honey lover?</p><br>
+            <p>We are all about bringing Healthy Bee <br> Products from the Hive to our Customers!</p><br>
+            <p class="main">Any questions? Give us a call at</p>
+            <p class="num">3455560</p>
+        
+            <div id="icons">
+            
+                <a href="https://www.facebook.com"> <i class='bx bxl-facebook-circle bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+                <a href="https://web.whatsapp.com"><i class='bx bxl-whatsapp bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+            </div>
+            
+           
+        </div>
+
+        <div class="find">
+            <p class="hd">find us</p>
+            <p><span class="l1">Honey Ltd,</span><br><br>
+                2972 Westheimer<br><br>
+                Rd. Santa Ana,<br><br>
+                Illinois, USA</p>
+           
+        </div>
+
+    </div>
+   
+</body>
+</html>
